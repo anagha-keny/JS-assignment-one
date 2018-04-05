@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 1</title>
+</head>
+<body>
+	<div id="fruit"></div>
+<script type="text/javascript">
+	//1. Create a variable called carName, assign the value “Honda City" to it, and display it.
+	var carName;
+	carName = "Honda City";
+	document.write("Car Name : ",carName);
+	document.write("<br>");
+
+	//2. Create a variable called number, assign the value 150 to it, and display it.
+	var number;
+	number = 150;
+	document.write("Number = ",number);
+	document.write("<br>"); 
+
+	//3. Display the sum of 5 + 10, using two variables x and y.
+	let x = 5;
+	let y = 10;
+
+	//4. Create a third variable called z, assign x + y to it, and display it.
+	let z = x + y;
+	document.write("x + y = ",z);
+	
+	//5. Use a single var keyword to create three variables with the following values: firstName = “John” lastName = “Doe" age = 35
+	var firstName ="John", lastName ="Doe",age= 35;
+	
+	//6. Create DOB constant. Assume calculateAge() function will give you age. Store the value of calculateAge() in your variable/constant.
+	const DOB =calculateAge();
+		function calculateAge(){
+		return 20;
+	}
+
+	document.write("<br>Age: ",DOB);
+
+
+	//7. Create a variable, assign some value to your variable and insert the value inside "div" element.
+	var newVar = "Apple";
+	function showValue(newVar){
+		return newVar;
+	}
+	document.getElementById("fruit").innerHTML = showValue("Apple");
+
+	//8. Use above question and use your choice of prompt box to display value of your variable. 
+	alert(newVar);
+
+
+</script>
+</body>
+</html>
